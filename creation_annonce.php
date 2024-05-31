@@ -1,0 +1,40 @@
+<?php
+session_start();
+?>
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> StageonClick</title>
+    <?php require('./includes/headlinks.php') ?>
+</head>
+<body>
+    <header>
+<h1 class=" container-fluid bg-primary text-center text-light"> ANNONCES </h1>
+
+    </header>
+   
+<body class="bg-primary">
+    <?php require('./includes/header.php') ?>
+    <?php
+    // redireaction à la page d'accueil si l'utilisateur n'est pas connecté
+    if (empty($_SESSION['id']) || $_SESSION['statut'] !== "entreprise") {
+        header('Location: ./index.php');
+        exit();
+    }
+    ?>
+    <?php
+    // affichage d'un message d'erreur stocké dans la session (un des seuls moyens de faire communiquer des fichiers entre eux)
+    if (!empty($_SESSION['error'])) {
+        echo $_SESSION['error'];
+        // on vide la variable de session pour ne pas causer de conflits entre les messages d'erreur
+        $_SESSION['error'] = "";
+    }
+    ?>
+    <?php require('./includes/footer.php') ?>
+    
+</body>
+
+</html>
