@@ -125,7 +125,7 @@ session_start();
                 <label for="pass2">Confirmation mot de passe</label>
                 <input type="password" name="pass2" id="pass2">
             </div>
-            <button class="mt-3 " type="submit">Valider</button>
+            <button class="mt-2" type="submit">Valider</button>
         </form>
     <?php } ?>
     <?php
