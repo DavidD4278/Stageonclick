@@ -29,7 +29,7 @@
     <section class="container-fluid col-lm-4 bg-primary color text-center mt-3">
         <div class="row ">
             <div class=" text-center col-sm-12">
-                <form class="bg-primary mt-3 mb-3 text-light" action="./scripts/entreprises/modifMailEntr.php" method="post">
+                <form class="bg-primary mt-3 mb-3 text-light rounded-3" action="./scripts/entreprises/modifMailEntr.php" method="post">
                     <label for="mail">Nouveau mail</label>
                     <input type="email" name="mail" id="mail">
                     <button type="submit">Modifier Mail</button>
@@ -71,7 +71,9 @@
             </div>
         </div>
     </section>
-    <a href="./scripts/entreprises/supprCompte_Entr.php">Supprimer mon compte</a>
+
+    <a class="container d-flex justify-content-center btn btn-danger mt-3 " href="./scripts/entreprises/supprCompte_Entr.php">Supprimer mon compte</a>
+    </div>
     <?php require('./includes/footer.php')
     ?>
 </body>
