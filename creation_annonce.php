@@ -11,11 +11,7 @@ session_start();
     <?php require('./includes/headlinks.php') ?>
 </head>
 <body>
-    <header>
-<h1 class=" container-fluid bg-primary text-center text-light"> ANNONCES </h1>
 
-    </header>
-   
 <body class="bg-primary">
     <?php require('./includes/header.php') ?>
     <?php

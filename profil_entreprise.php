@@ -26,53 +26,72 @@
         $_SESSION['error'] = "";
     }
     ?>
-    <section class="container-fluid col-lm-4 bg-primary color text-center mt-3">
-        <div class="row ">
-            <div class=" text-center col-sm-12">
-                <form class="bg-primary mt-3 mb-3 text-light rounded-3" action="./scripts/entreprises/modifMailEntr.php" method="post">
-                    <label for="mail">Nouveau mail</label>
-                    <input type="email" name="mail" id="mail">
-                    <button type="submit">Modifier Mail</button>
-                </form>
-                <form class="bg-primary mb-3 text-light" action="./scripts/entreprises/modifCompteEntr.php" method="post">
-                    <label for="nom_gerant"> nom_gerant</label>
-                    <input type="text" name="nom_gerant" id="nom_gerant">
-                    <button type="submit">Modifier nom du gérant</button>
-                </form>
-                <form class="bg-primary mb-3 text-light" action="./scripts/entreprises/modifAdresse.php" method="post">
-                    <label for="adresse"> Adresse</label>
-                    <input type="text" name="adresse" id="adresse">
-                    <button type="submit">Modifier adresse </button>
-                    </form>
-                <form class="bg-primary mb-3 text-light" action="./scripts/entreprises/modifierCodePostal.php" method="post">
-                    <label for="code_postal"> Code postal </label>
-                    <input type="text" name="code_postal" id="code_postal">
-                    <button type="submit">Modifier le code postal </button>
-                    </form>
-                    <form class="bg-primary mb-3 text-light" action="./scripts/entreprises/modifVille.php" method="post">
-                    <label for="ville"> ville </label>
-                    <input type="text" name="ville" id="ville">
-                    <button type="submit">Modifier la ville </button>
-                  </form>
-                <form class="bg-primary mb-3 text-light" action="./scripts/entreprises/modifNumeroTel.php" method="post">
-                    <label for="numero_tel"> Numero de téléphone </label>
-                    <input type="text" name="numero_tel" id="numero_tel">
-                    <button type="submit">Modifier Numéro de téléphone </button>
-                </form>
-                <form class="bg-primary text-light" action="./scripts/entreprises/modifMDPEntr.php" method="post">
-                    <label for="oldpass">Actuel mdp</label>
-                    <input type="password" name="oldpass" id="oldpass">
-                    <label for="newpass">Nouveau mdp</label>
-                    <input type="password" name="newpass" id="newpass">
-                    <label for="newpass2">Confirmation</label>
-                    <input type="password" name="newpass2" id="newpass2">
-                    <button type="submit">Modifier MDP</button>
-                </form>
-            </div>
+<section class="container col-lg-4 bg-primary text-center mx-auto my-5 rounded-top-5 rounded-bottom-5">
+    <div class="row">
+        <div class="col-12">
+            <form class="bg-primary mt-3 mb-3 text-light rounded-3 p-3" action="./scripts/entreprises/modifMailEntr.php" method="post">
+                <div class="mb-3 text-start">
+                    <label for="mail" class="form-label">Nouveau mail</label>
+                    <input type="email" name="mail" id="mail" class="form-control">
+                </div>
+                <button type="submit" class="btn btn-light">Modifier Mail</button>
+            </form>
+            <form class="bg-primary mb-3 text-light p-3" action="./scripts/entreprises/modifCompteEntr.php" method="post">
+                <div class="mb-3 text-start">
+                    <label for="nom_gerant" class="form-label">Nom du gérant</label>
+                    <input type="text" name="nom_gerant" id="nom_gerant" class="form-control">
+                </div>
+                <button type="submit" class="btn btn-light">Modifier nom du gérant</button>
+            </form>
+            <form class="bg-primary mb-3 text-light p-3" action="./scripts/entreprises/modifAdresse.php" method="post">
+                <div class="mb-3 text-start">
+                    <label for="adresse" class="form-label">Adresse</label>
+                    <input type="text" name="adresse" id="adresse" class="form-control">
+                </div>
+                <button type="submit" class="btn btn-light">Modifier adresse</button>
+            </form>
+            <form class="bg-primary mb-3 text-light p-3" action="./scripts/entreprises/modifierCodePostal.php" method="post">
+                <div class="mb-3 text-start">
+                    <label for="code_postal" class="form-label">Code postal</label>
+                    <input type="text" name="code_postal" id="code_postal" class="form-control">
+                </div>
+                <button type="submit" class="btn btn-light">Modifier le code postal</button>
+            </form>
+            <form class="bg-primary mb-3 text-light p-3" action="./scripts/entreprises/modifVille.php" method="post">
+                <div class="mb-3 text-start">
+                    <label for="ville" class="form-label">Ville</label>
+                    <input type="text" name="ville" id="ville" class="form-control">
+                </div>
+                <button type="submit" class="btn btn-light">Modifier la ville</button>
+            </form>
+            <form class="bg-primary mb-3 text-light p-3" action="./scripts/entreprises/modifNumeroTel.php" method="post">
+                <div class="mb-3 text-start">
+                    <label for="numero_tel" class="form-label">Numéro de téléphone</label>
+                    <input type="text" name="numero_tel" id="numero_tel" class="form-control">
+                </div>
+                <button type="submit" class="btn btn-light">Modifier Numéro de téléphone</button>
+            </form>
+            <form class="bg-primary text-light p-3" action="./scripts/entreprises/modifMDPEntr.php" method="post">
+                <div class="mb-3 text-start">
+                    <label for="oldpass" class="form-label">Actuel mdp</label>
+                    <input type="password" name="oldpass" id="oldpass" class="form-control">
+                </div>
+                <div class="mb-3 text-start">
+                    <label for="newpass" class="form-label">Nouveau mdp</label>
+                    <input type="password" name="newpass" id="newpass" class="form-control">
+                </div>
+                <div class="mb-3 text-start">
+                    <label for="newpass2" class="form-label">Confirmation</label>
+                    <input type="password" name="newpass2" id="newpass2" class="form-control">
+                </div>
+                <button type="submit" class="btn btn-light">Modifier MDP</button>
+            </form>
         </div>
-    </section>
+    </div>
+</section>
 
-    <a class="container d-flex justify-content-center btn btn-danger mt-3 " href="./scripts/entreprises/supprCompte_Entr.php">Supprimer mon compte</a>
+
+    <a class="container d-flex justify-content-center btn btn-dark mb-3 mt-3 " href="./scripts/entreprises/supprCompte_Entr.php">Supprimer mon compte</a>
     </div>
     <?php require('./includes/footer.php')
     ?>

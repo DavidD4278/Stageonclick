@@ -35,19 +35,20 @@
             <?php
             } else {
             ?>
-                <div class='d-flex flex-column flex-md-row justify-content-md-around' id='connectedLinks'>
-                    <!-- ECHO RACCOURCI CI-DESSOUS -->
-                    <p class='mb-md-0'>Bonjour <?= $_SESSION['nom'] ?> !</p>
-                    <?php
-                    if ($_SESSION['statut'] === "stagiaire") {
-                        echo "<p class='mb-md-0'><a href='./profil_stagiaire.php'>Modifier le profil</a></p>";
-                    } else {
-                        echo "<p class='mb-md-0'><a href='./creation_annonce.php'>Poster une annonce</a></p>";
-                        echo "<p class='mb-md-0'><a href='./profil_entreprise.php'>Modifier le profil</a></p>";
-                    }
-                    ?>
-                    <p class='mb-md-0'><a href='./scripts/deconnexion.php'>Déconnexion</a></p>
-                </div>
+<div class="d-flex flex-column flex-md-row justify-content-around my-3" id="connectedLinks">
+    <!-- ECHO RACCOURCI CI-DESSOUS -->
+    <p class="mb-md-0">Bonjour <?= $_SESSION['nom'] ?> !</p>
+    <?php
+    if ($_SESSION['statut'] === "stagiaire") {
+        echo "<p class='mb-md-0'><a href='./profil_stagiaire.php'>Modifier le profil</a></p>";
+    } else {
+        echo "<p class='mb-md-0'><a href='./creation_annonce.php'>Poster une annonce</a></p>";
+        echo "<p class='mb-md-0'><a href='./profil_entreprise.php'>Modifier le profil</a></p>";
+    }
+    ?>
+    <p class="mb-md-0"><a href='./scripts/deconnexion.php'>Déconnexion</a></p>
+</div>
+
 
 
             <?php
