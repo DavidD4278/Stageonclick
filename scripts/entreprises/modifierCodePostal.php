@@ -12,7 +12,7 @@ if(!empty($_POST['code_postal'])) {
     // mise à jour session
     $_SESSION['code_postal'] = $code_postal;
     // preparation message pour utilisateur
-    $_SESSION['error'] = "<p class='text-success'>Le code postal a bien été modifié.</p>";
+    $_SESSION['error'] = "<p class='text-light'>Le code postal a bien été modifié.</p>";
     // redirection page profil
     header('Location: ../../profil_entreprise.php');
     exit();
