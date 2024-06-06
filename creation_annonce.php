@@ -13,6 +13,8 @@ session_start();
 <body>
 
 <body class="bg-primary">
+
+
     <?php require('./includes/header.php') ?>
     <?php
     // redireaction à la page d'accueil si l'utilisateur n'est pas connecté
@@ -30,7 +32,26 @@ session_start();
     }
     ?>
     <?php require('./includes/footer.php') ?>
-    
+    <form class="bg-primary mb-3 text-light rounded-3 p-3" action="./scripts/creation_annonce.php" method="post">
+                <div class="mb-3 text-center">
+                    <label for="titre" class="form-label"> Stage à pourvoir </label>
+                    <input type="text" name="titre" id="titre" class="form-control">
+                </div>
+                <!-- <button type="submit" class="btn btn-light">Modifier le code postal</button>           </form> -->
+            <form class="bg-primary mb-3 text-light rounded-3 p-3" action="./scripts/entreprises/modifVille.php" method="post">
+                <div class="mb-3 text-center">
+                    <label for="description" class="form-label"> Offre de stage </label>
+                    <input type="text" name="description" id="description" class="form-control">
+                </div>
+                <button type="submit" class="btn btn-light">Modifier l'offre de stage </button>
+            </form>
+            <form class="bg-primary mb-3 text-light rounded-3 p-3" action="./scripts/entreprises/modifNumeroTel.php" method="post">
+                <div class="mb-3 text-center">
+                    <label for="id_entreprise" class="form-label">  Publié par  id de l'entreprise  </label>
+                    <input type="text" name="id_entreprise" id="id_entreprise" class="form-control">
+                </div>
+                <button type="submit" class="  text-center btn btn-light"> Valider </button>
+            </form>
 </body>
 
 </html>

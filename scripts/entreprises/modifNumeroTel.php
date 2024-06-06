@@ -7,8 +7,8 @@ if(!empty($_POST['numero_tel'])) {
     // sécurisation input utilisateur
     $numero_tel = htmlspecialchars($_POST['numero_tel']);
     // mise à jour mail
-    $query = $connect->prepare("UPDATE entreprise SET numero_tel = ? WHERE numero_tel = ?");
-    $query->execute([$numero_tel, $_SESSION['numero_tel']]);
+    $query = $connect->prepare("UPDATE entreprise SET numero_tel = ? WHERE id = ?");
+    $query->execute([$numero_tel, $_SESSION['id']]);
     // mise à jour session
     $_SESSION['numero_tel'] = $numero_tel;
     // preparation message pour utilisateur

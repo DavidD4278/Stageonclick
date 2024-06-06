@@ -7,8 +7,8 @@ if(!empty($_POST['adresse'])) {
     // sécurisation input utilisateur
     $adresse = htmlspecialchars($_POST['adresse']);
     // mise à jour mail
-    $query = $connect->prepare("UPDATE entreprise SET adresse = ? WHERE adresse = ?");
-    $query->execute([$adresse, $_SESSION['adresse']]);
+    $query = $connect->prepare("UPDATE entreprise SET adresse = ? WHERE id = ?");
+    $query->execute([$adresse, $_SESSION['id']]);
     // mise à jour session
     $_SESSION['adresse'] = $adresse;
     // preparation message pour utilisateur

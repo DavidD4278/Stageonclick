@@ -3,12 +3,12 @@ session_start();
 require('../../includes/dbConnect.php');
 
 // verification du remplissage des champs
-if(!empty($_POST['code_postal'])) {
+if (!empty($_POST['code_postal'])) {
     // sécurisation input utilisateur
     $code_postal = htmlspecialchars($_POST['code_postal']);
     // mise à jour mail
-    $query = $connect->prepare("UPDATE entreprise SET code_postal = ? WHERE code_postal = ?");
-    $query->execute([$code_postal, $_SESSION['code_postal']]);
+    $query = $connect->prepare("UPDATE entreprise SET code_postal = ? WHERE id = ?");
+    $query->execute([$code_postal, $_SESSION['id']]);
     // mise à jour session
     $_SESSION['code_postal'] = $code_postal;
     // preparation message pour utilisateur

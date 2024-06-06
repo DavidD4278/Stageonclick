@@ -8,11 +8,11 @@ if(!empty($_POST['ville'])) {
     $ville = htmlspecialchars($_POST['ville']);
     // mise à jour mail
     $query = $connect->prepare("UPDATE entreprise SET ville  = ? WHERE ville = ?");
-    $query->execute([$mail, $_SESSION['ville']]);
+    $query->execute([$ville, $_SESSION['ville']]);
     // mise à jour session
     $_SESSION['ville'] = $ville;
     // preparation message pour utilisateur
-    $_SESSION['error'] = "<p class='text-success'>La vijlle  a bien été modifiée.</p>";
+    $_SESSION['error'] = "<p class='text-success'>La ville  a bien été modifiée.</p>";
     // redirection page profil
     header('Location: ../../profil_entreprise.php');
     exit();
