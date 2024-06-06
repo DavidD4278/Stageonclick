@@ -1,11 +1,6 @@
 <?php
 // obligatoire si on veut utiliser les variables de sessions
 session_start();
-// exemple de debug avec var_dump
-// echo '<pre>';
-// var_dump($_POST);
-// echo '</pre>';
-// die;
 require('../../includes/dbConnect.php');
 // vérification inputs vides
 if (!empty($_POST['titre']) && !empty($_POST['description'])  && !empty($_POST['id_entreprise'])) {
