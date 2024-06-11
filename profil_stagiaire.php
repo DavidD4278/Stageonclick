@@ -27,7 +27,7 @@
         $_SESSION['error'] = "";
     }
     ?>
-    <<section class="container col-lg-4 bg-primary text-center mx-auto my-5">
+    <section class="container col-lg-4 bg-primary text-center mx-auto my-5">
     <div class="row">
         <div class="col-12">
             <form class="bg-primary mt-3 mb-3 text-light rounded-3" action="./scripts/stagiaires/modifMail.php" method="post">
@@ -62,8 +62,6 @@
         </div>
     </div>
 </section>
-
-
     <a href="./scripts/stagiaires/supprCompte.php">Supprimer mon compte</a>
     <?php require('./includes/footer.php')
     ?>

@@ -11,7 +11,7 @@ session_start();
     <?php require('./includes/headlinks.php') ?>
 </head>
 
-<body class="bg-primary">
+<body class="id=bg-img2">
     <?php require('./includes/header.php') ?>
     <?php
     // affichage d'un message d'erreur stocké dans la session (un des seuls moyens de faire communiquer des fichiers entre eux)

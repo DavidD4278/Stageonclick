@@ -38,6 +38,7 @@
 <div class="d-flex flex-column flex-md-row justify-content-around my-3" id="connectedLinks">
     <!-- ECHO RACCOURCI CI-DESSOUS -->
     <p class="mb-md-0">Bonjour <?= $_SESSION['nom'] ?> !</p>
+    <!-- <p class="mb-md-0">Bonjour <?= $_SESSION['id'] ?> !</p> -->
     <?php
     if ($_SESSION['statut'] === "stagiaire") {
         echo "<p class='mb-md-0'><a href='./profil_stagiaire.php'>Modifier le profil</a></p>";
