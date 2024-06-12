@@ -1,6 +1,4 @@
-#bg-image {
-  background-image: url("../medias/Blonde.png");
-}
+
 
 
 
@@ -10,3 +8,14 @@
   }
 }
 
+.background{
+
+background-image: url("../medias/duo/stagiaires2.jpg");
+
+}
+.photo-stage{
+
+  width: 15%;
+  height: 10%;
+
+}
