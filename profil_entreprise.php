@@ -86,11 +86,10 @@
                     </div>
                     <button type="submit" class="btn btn-light">Modifier MDP</button>
                 </form>
+               
             </div>
         </div>
     </section>
-
-
     <a class="container-fluid-flex justify-content-center btn btn-dark text-center mb-3 mt-3 " href="./scripts/entreprises/supprCompte_Entr.php">Supprimer mon compte</a>
     </div>
     <?php require('./includes/footer.php')

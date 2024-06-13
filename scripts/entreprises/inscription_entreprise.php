@@ -30,12 +30,12 @@ if (!empty($_POST['nom']) && !empty($_POST['domaine']) && !empty($_POST['nom_ger
             // insertion dans la BDD
             $query = $connect->prepare("INSERT INTO entreprise(nom, domaine, nom_gerant, adresse, code_postal, ville, numero_tel, mail, pass) VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?)");
             $query->execute([$nom, $domaine, $nom_gerant, $adresse, $code_postal, $ville, $numero_tel, $mail, $pass]);
-            $_SESSION['error'] = "<p class='text-primary'>Inscription réussie. Veuillez vous connecter.</p>";
+            $_SESSION['error'] = "<p class='text-white'>Inscription réussie. Veuillez vous connecter.</p>";
             header('Location: ../../index.php');
             exit();
         } else {
             // erreur si doublon mail ou pseudo
-            $_SESSION['error'] = "<p class='text-danger'>Votre mail ou votre pseudo existent déjà.</p>";
+            $_SESSION['error'] = "<p class='text-white'>Votre mail ou votre pseudo existent déjà.</p>";
             header('Location: ../../index.php');
             exit();
         }

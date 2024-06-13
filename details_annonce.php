@@ -4,12 +4,12 @@ session_start();
 // on se connecte à la base de données
 require('../../includes/dbConnect.php');
 
-// on recherche dans la bdd si les annonces existeNT dans la bdd
+// on recherche dans la bdd si les annonces existent dans la bdd
 $query= $connect->prepare("SELECT * FROM annonces WHERE id = ? ");
 $query-> execute ([$id]);
 $annonces = $query -> fetch();
 // si l'annonce existe 
-if ($annonce !== false) {
+if ($annonces !== false) {
 // on verifie que les données correspondent à l'annonceur
 
 // on rentre les infos des annonces 

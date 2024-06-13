@@ -9,9 +9,10 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> StageonClick</title>
     <?php require('./includes/headlinks.php') ?>
+
 </head>
 
-<body class="id=bg-img2">
+<body class="bg-primary">
     <?php require('./includes/header.php') ?>
     <?php
     // affichage d'un message d'erreur stocké dans la session (un des seuls moyens de faire communiquer des fichiers entre eux)
