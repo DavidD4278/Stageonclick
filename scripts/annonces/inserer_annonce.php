@@ -17,7 +17,7 @@ if (!empty($_POST['titre']) && !empty($_POST['description'])  && !empty($_POST['
     $query = $connect->prepare("INSERT INTO annonces(titre, description_poste, id_entreprise ) VALUES(?, ?, ?)");
     $query->execute([$titre, $description_poste, $id_entreprise]);
     $_SESSION['error'] = "<p class='text-light'>publication réussie.</p>";
-     header('Location: ./annonces.html');
+     header('Location: ./annonces.php');
     exit();
 } else {
     // erreur champ vide
