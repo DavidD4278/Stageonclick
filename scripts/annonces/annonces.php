@@ -42,7 +42,7 @@ require('../../includes/dbConnect.php');
                echo '
               <div class="card mt-2 mb-2 bg-primary" style="width: 18rem;">
             <h5> numericlick34</h5>
-            <img src="/medias/entreprises.jpg" class="card-img-top" alt="...">
+            <img src="../../medias/entreprises.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title text-center">Offre de stage </h5>
               <p class="card-text">  ' . $recupAnn[$i]['description_poste']. '</p>;
