@@ -30,33 +30,20 @@ session_start();
             $_SESSION['error'] = "";
         }
         ?>
-        <?php require('./includes/footer.php') ?>
-        <form class="bg-primary mb-3 text-light rounded-3 p-3" action="./scripts/annonces/inserer_annonce.php" method="post">
+        
+        <form class="bg-primary mb-3 text-light rounded-3 p-3 w-75 mx-auto" action="./scripts/annonces/inserer_annonce.php" method="post">
             <div class="mb-3 text-center">
                 <label for="titre" class="form-label"> titre du stage </label>
                 <input type="text" name="titre" id="titre" class="form-control">
             </div>
-            <!-- <button type="submit" class="btn btn-light">Modifier le code postal</button>           </form> -->
 
             <div class="mb-3 text-center">
                 <label for="description" class="form-label"> Offre de stage (descrption) </label>
-                <input type="text" name="description" id="description" class="form-control">
-            </div>
-            <!-- <button type="submit" class="btn btn-light">Modifier l'offre de stage </button> -->
-
-            <div class="mb-3 text-center">
-                <label for="id_entreprise" class="form-label"> Publiée par id de l'entreprise </label>
-                <input type="text" name="id_entreprise" id="id_entreprise" class="form-control" value="  <?php echo ($_SESSION['id']) ?>">
+                <textarea type="text" name="description" id="description" class="form-control"></textarea>
             </div>
             <button type="submit" class="text-center btn btn-light"> Valider </button>
         </form>
-        <form class="bg-primary mb-3 text-light rounded-3 p-3 mt-5" action="./scripts/entreprises/modifierAnnonces.php" method="post">
-            <div class="mb-3 text-center">
-                <label for="description_poste" class="form-label"> Description du stage </label>
-                <input type="text" name="description_poste" id="id_entreprise" class="form-control">
-            </div>
-            <button type="submit" class="btn btn-light">Modifier la description du stage</button>
-        </form>
+        <?php require('./includes/footer.php') ?>
     </body>
 
 </html>

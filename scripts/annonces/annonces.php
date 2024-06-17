@@ -20,6 +20,7 @@ require('../../includes/dbConnect.php');
     <header>
 <h1 class=" container-fluid bg-primary text-center text-light rounded-3"> ANNONCES </h1>
 
+
     </header>
     <main>
         <h1 class=" text-center "> LES OFFRES DE STAGES SUR LE BASSIN DE THAU DANS LE DEVELOPPEMENT WEB </h1>
