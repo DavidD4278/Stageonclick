@@ -17,11 +17,12 @@ require('../../includes/dbConnect.php');
 </head>
 
 <body class="body2">
-    <header>
+
+    
 <h1 class=" container-fluid bg-primary text-center text-light rounded-3"> ANNONCES </h1>
 
 
-    </header>
+    
     <main>
         <h1 class=" text-center "> LES OFFRES DE STAGES SUR LE BASSIN DE THAU DANS LE DEVELOPPEMENT WEB </h1>
 <section class=" containier-fluid row justify-content-around  rounded-4 mt-5  ">
