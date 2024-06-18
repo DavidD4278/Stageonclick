@@ -9,7 +9,7 @@
     <?php require('includes/headlinks.php') ?>
 </head>
 
-<body id="bg-image" class="text-align">
+<body  class=" bg-profil.entr text-align">
     <?php require('./includes/header.php') ?>
     <?php
     // redireaction à la page d'accueil si l'utilisateur n'est pas connecté

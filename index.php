@@ -12,7 +12,8 @@ session_start();
 
 </head>
 
-<body class="bg-primary">
+<body class="body1">
+    
     <?php require('./includes/header.php') ?>
     <?php
     // affichage d'un message d'erreur stocké dans la session (un des seuls moyens de faire communiquer des fichiers entre eux)

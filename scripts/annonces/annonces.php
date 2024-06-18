@@ -16,7 +16,7 @@ require('../../includes/dbConnect.php');
    <script defer src="script.js"></script>
 </head>
 
-<body>
+<body class="body2">
     <header>
 <h1 class=" container-fluid bg-primary text-center text-light rounded-3"> ANNONCES </h1>
 
